@@ -2,60 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link type="text/css" src="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tragic Test</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/custom.js"></script>
 </head>
 <body>
     <div id="topBar">
         <div class="container">
-            <div>Up to 25% off + $30 off Rx Snow Goggle orders of $225 or more. Use Code:GOGGLEBLOWOUT</div>
-            <div>DETAILS »</div>
-            <div>Sign in <img src="" alt="shopping cart"></div>
+            <div class="adText">
+                <span class="whiteText">Up to 25% off + $30 off</span> Rx Snow Goggle orders of $225 or more. <span>Use Code:<span class="whiteText">GOGGLEBLOWOUT</span></span>
+                <a class="adDetails" href="/ad-details/">DETAILS »</a>
+            </div>
+            <div class="userInfo"><span class="signInText">Sign in </span><img class="cart" src="/images/cart.png" alt="shopping cart"></div>
         </div>
     </div>
-    <div id="navBar">
+    <div id="navBar" class="collapsed">
         <div class="container">
-            <div>Shop By</div>
-            <ul>
-                <li>Sport</li>
-                <li>Category</li>
-                <li>Brand</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Kids</li>
-            </ul>
-        </div>
-        <div>
-            <div>Search By</div>
-            <ul>
-                <li>Rx</li>
-                <li>Analyzer</li>
-                <li>Help/Guides</li>
-            </ul>
+            <div class="filters">
+                <div class="categoryFilter">
+                    <div class="filterTitle">Shop By</div>
+                    <div class="navListContainer">
+                        <ul class="inlineList">
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">Brand</a></li>
+                        </ul>
+                        <ul class="inlineList">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="searchFilter">
+                    <div class="filterCol">
+                        <div class="filterTitle">Search By</div>
+                        <ul class="inlineList">
+                            <li><a href="#">Rx</a></li>
+                            <li><a href="#">Analyzer</a></li>
+                            <li><a href="#">Help/Guides</a></li>
+                        </ul>
+                    </div>
+                    <img class="searchIcon" src="/images/search-icon.png">
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="navCollapse()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
     <div id="logoBar">
-        <div><img src=""></div>
-        <div><img src=""></div>
-        <div >
-            <div><img src=""></div>
-            <div>
-                <div>Call an Optician</div>
-                <div>(888) 831-5817</div>
+        <div class="container">
+        <img class="bestPlaces" src="/images/Best-Place-to-Work.jpg">
+            <img class="sportRX" src="/images/SportRX-Logo.jpg">
+            <div class="callInfo">
+                <img class="phoneIcon" src="/images/Phone.png">
+                <div>
+                    <div>Call an Optician</div>
+                    <div class="phoneNumber">(888) 831-5817</div>
+                </div>
             </div>
         </div>
     </div>
     <div id="features">
-        <div id="ad1">
-            <div class="col50">
-                <div class="adTitle">WHAT’S NEW FROM NIKE</div>
-                <div class="subTitle">
-                    <div class="ln1">ALL AROUND SPORT:</div>
-                    <div class="ln2">SKYLON ACE XV</div>
+        <div class="container">
+            <div id="ad1">
+                <div class="col1">
+                    <div class="adTitle">WHAT’S NEW FROM NIKE</div>
+                    <div class="adBody">
+                        <div class="subTitle">
+                            <div class="ln1">ALL AROUND SPORT:</div>
+                            <div class="ln2">SKYLON ACE XV</div>
+                        </div>
+                        <div><a class="btn-shop" href="/shop-nike/">SHOP NIKE NOW</a></div>
+                    </div>
                 </div>
-                <div class="btn-shop">SHOP NIKE NOW</div>
+                <div class="col2"><img class="product1" src="/images/product1.jpg"></div>
             </div>
-            <div class="col50"><img src=""></div>
         </div>
     </div>
 </body>

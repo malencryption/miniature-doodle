@@ -1,8 +1,369 @@
+@font-face {
+	font-family: AvantGardeCondDemi;
+	src: url('/fonts/ITC Avant Garde Gothic Demi Condensed.otf');
+}
+@font-face {
+	font-family: AvantGardeCondBook;
+	src: url('/fonts/ITC Avant Garde Gothic Book Condensed.otf');
+}
+@font-face {
+	font-family: AvantGardeCondBold;
+	src: url('/fonts/ITC Avant Garde Gothic Bold Condensed.otf');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
+
 body {
-  margin: 0;
+	margin: 0;
+    min-height: 100vh;
+    background: #f5f4f2;
 }
 .container {
-  width: 1080px;
-  margin: 0 auto;
-  display: flex;
+	width: 1080px;
+	max-width: 100%;
+	margin: 0 auto;
+    padding: 0 10px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    position: relative;
+}
+#topBar {
+	background: #e45819;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: 'AvantGardeCondDemi', sans-serif;
+}
+.whiteText {
+    color: #fff;
+}
+.adText {
+    color: #57443b;
+    width: 100%;
+    text-align: center;
+
+    span {
+    	display: block;
+
+    	span {
+    		display: inline;
+    	}
+    }
+}
+.adDetails {
+	color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.userInfo {
+	color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 116px;
+    width: 100%;
+
+	img.cart {
+		margin: 0 0 0 32px;
+	}
+}
+#navBar {
+    border-bottom: 1px solid #eaeaea;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'AvantGardeCondBook', sans-serif;
+
+    .icon {
+    	color: #565759;
+	    font-size: 25px;
+    }
+    .container {
+    	justify-content: center;
+    }
+}
+.filters {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+ul.inlineList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #565759;
+    font-size: 24px;
+
+    li:not(:first-child):not(:last-child) {
+    	margin: 0 25px;
+    }
+    li a {
+    	color: #565759;
+    	text-decoration: none;
+    }
+}
+.filterTitle {
+	color: #808080;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+.navListContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .inlineList:nth-of-type(1) {
+    	margin: 0 55px 0 0;
+    }
+}
+.searchFilter, .categoryFilter {
+	display: none;
+}
+.searchFilter {
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    .filterCol {
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	}
+	
+	.inlineList {
+		font-size: 18px;
+	}
+	.searchIcon {
+		margin: 0 0 0 12px;
+	}
+}
+#logoBar {
+    margin: 15px 0;
+
+    .container {
+    	justify-content: space-around;
+    }
+
+    img {
+    	margin: 15px;
+    }
+	.callInfo {
+	    font-size: 20px;
+	    line-height: 30px;
+	    text-transform: uppercase;
+	    font-family: 'AvantGardeCondBold', sans-serif;
+	    color: #565759;
+	    align-items: center;
+	    text-align: center;
+	    display: flex;
+
+	    .phoneNumber {
+	    	color: #db5418;
+	    	font-size: 24px;
+	    }
+	    .phoneIcon {
+	    	margin: 0 8px 0 0;
+	    }
+	}
+}
+#features {
+	margin: 30px 0;
+
+	.container {
+		width: 1500px;
+	}
+}
+#ad1 {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    .col1 {
+    	width: 100%;
+    	margin: 0 15px 0 0;
+    }
+    .col2 {
+    	width: 100%;
+    	display: flex;
+    	align-items: center;
+	    justify-content: flex-end;
+
+    	img {
+    		max-width: 525px; 
+    		width: 100%;
+    	}
+    }
+}
+img {
+	max-width: 100%;
+}
+.adTitle {
+    font-size: 23px;
+    color: #fff;
+    background: #1a2328;
+    line-height: 56px;
+    padding: 0 20px 0 11.5%;
+    margin: 25px 0 0;
+    display: inline-block;
+}
+.adBody {
+    margin: 20px 0 0 11.5%;
+}
+.subTitle {
+    font-size: 20px;
+    margin: 0 0 25px;
+
+    .ln1 {
+    	color: #da5418;
+    	border-bottom: 1px solid #333e42;
+    	line-height: 24px;
+    }
+    .ln2 {
+    	color: #333e42;
+	    line-height: 30px;
+    }
+}
+.btn-shop {
+    display: inline-block;
+    background: url(/images/Btn-Base.png) no-repeat;
+    color: #fff;
+    font-size: 24px;
+    line-height: 45px;
+    padding: 0 30px 14px;
+    text-decoration: none;
+    margin: 0 0 15px;
+}
+@media (min-width: 576px) {
+	.adTitle {
+	    font-size: 26px;
+	}
+	.subTitle {
+		font-size: 24px;
+	}
+}
+@media (min-width: 768px) {
+	#ad1 {
+		 .col1 {
+	    	width: 45%;
+	    }
+    	.col2 {
+    		width: calc(55% - 15px);
+
+    		img {
+    			max-width: 100%;
+    		}
+    	}
+	}
+	.adTitle {
+	    padding: 0 20px 0 11.5%;
+	}
+	.adText {
+	    span {
+	    	display: inline;
+	    }
+	}
+	.adBody {
+	    margin: 20px 0 0 11.5%;
+	}
+}
+@media (max-width: 991px) {
+	#navBar.open {
+    	.searchFilter {
+    		display: flex;
+    	}
+    	.categoryFilter {
+    		display: block;
+		    width: 100%;
+    		margin: 0 0 15px;
+    	}
+    	.filters {
+    		width: 100%;
+    		position: absolute;
+    		background: #fff;
+    		top: 35px;
+    		padding: 10px;
+    		left: 0;
+		    z-index: 999;
+	        border-bottom: 1px solid #1a2328;
+   			border-top: 1px solid #1a2328;
+    	}
+    }
+}
+@media (min-width: 992px) {
+	.icon {
+		display: none;
+	}
+	.searchFilter {
+	    display: flex;
+	}
+	.categoryFilter {
+		display: block;
+	}
+	.adText {
+	    margin: 0 15px 0 0;
+	    width: auto;
+	    text-align: left;
+	}
+	.adTitle {
+	    font-size: 36px;
+        margin: 40px 0 0;
+	}
+	.adBody {
+		margin: 50px 0 0 11.5%;
+	}
+	.adDetails {
+	    margin: 0 0 0 29px;
+	    display: inline;
+	}
+	.subTitle {
+	    margin: 0 0 55px;
+	}
+	#logoBar {
+	    .container {
+	    	justify-content: space-between;
+	    }
+	    img {
+	    	margin: 0px;
+	    }
+	}
+	.userInfo {
+		width: auto;
+	}
+	.searchFilter {
+		.searchIcon {
+			margin: 0 0 0 120px;
+		}
+	}
+	#navBar {
+		.container {
+			justify-content: center;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.adTitle {
+	    padding: 0 20px 0 24.5%;
+	}
+	.adBody {
+	    margin: 50px 0 0 24.5%;
+	}
+	.searchFilter {
+		.searchIcon {
+			margin: 0 0 0 172px;
+		}
+	}
 }
