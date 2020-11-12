@@ -1,14 +1,14 @@
 @font-face {
 	font-family: AvantGardeCondDemi;
-	src: url('/fonts/ITC Avant Garde Gothic Demi Condensed.otf');
+	src: url('../fonts/ITC Avant Garde Gothic Demi Condensed.otf');
 }
 @font-face {
 	font-family: AvantGardeCondBook;
-	src: url('/fonts/ITC Avant Garde Gothic Book Condensed.otf');
+	src: url('../fonts/ITC Avant Garde Gothic Book Condensed.otf');
 }
 @font-face {
 	font-family: AvantGardeCondBold;
-	src: url('/fonts/ITC Avant Garde Gothic Bold Condensed.otf');
+	src: url('../fonts/ITC Avant Garde Gothic Bold Condensed.otf');
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
 
@@ -239,7 +239,7 @@ img {
 }
 .btn-shop {
     display: inline-block;
-    background: url(/images/Btn-Base.png) no-repeat;
+    background: url(../images/Btn-Base.png) no-repeat;
     color: #fff;
     font-size: 24px;
     line-height: 45px;
